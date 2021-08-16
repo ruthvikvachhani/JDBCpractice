@@ -15,7 +15,7 @@ import org.apache.logging.log4j.core.pattern.LoggerPatternConverter;
 
 
 public class JDBCDemo {
-	private static Logger logger = LogManager.getLogger(JDBCDemo.class);
+	private static final Logger logger = LogManager.getLogger(JDBCDemo.class);
 	public static void main(String[] args) {
 		String DB_URL = "jdbc:mysql://localhost/practice";
 		String DB_USER = "root";
@@ -37,15 +37,16 @@ public class JDBCDemo {
 
 	private static List<String> retriveList(Statement statement, String string) throws SQLException {
 		// TODO Auto-generated method stub
-		private static Logger logger = LogManager.getLogger(JDBCDemo.class);
+//		private static Logger logger = LogManager.getLogger(JDBCDemo.class);
 		System.out.println("SELECT * FROM REGIONS WHERE REGION_NAME LIKE '"+string+"%'");
 		ResultSet resultSet = statement.executeQuery("SELECT * FROM REGIONS WHERE REGION_NAME LIKE '"+string+"%'");
 		List<String> list = new ArrayList<>();
 		while(resultSet.next()) {
 			logger.debug(resultSet.getInt(1)+"");
-			System.out.println(resultSet.getInt(1)+"");
-			System.out.println(resultSet.getNString(2)+"");
-			list.add(resultSet.getNString(string));
+			logger.debug(resultSet.getNString(2)+"");
+//			System.out.println(resultSet.getInt(1)+"");
+//			System.out.println(resultSet.getNString(2)+"");
+			list.add(resultSet.getNString(2));
 		}
 		System.out.println("");
 		return list;

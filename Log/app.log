@@ -1,0 +1,9 @@
+2021-08-16 14:52:44,466 DEBUG c.t.j.d.JDBCDemo [main] 2
+2021-08-16 14:54:54,915 DEBUG c.t.j.d.JDBCDemo [main] 2
+2021-08-16 14:54:54,917 DEBUG c.t.j.d.JDBCDemo [main] Americas
+2021-08-16 14:55:10,905 DEBUG c.t.j.d.JDBCDemo [main] 2
+2021-08-16 14:55:10,906 DEBUG c.t.j.d.JDBCDemo [main] Americas
+2021-08-16 14:57:04,810 DEBUG c.t.j.d.JDBCDemo [main] 2
+2021-08-16 14:57:04,812 DEBUG c.t.j.d.JDBCDemo [main] Americas
+2021-08-16 14:57:04,812 DEBUG c.t.j.d.JDBCDemo [main] 3
+2021-08-16 14:57:04,812 DEBUG c.t.j.d.JDBCDemo [main] Asia
