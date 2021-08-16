@@ -8,14 +8,17 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.pattern.LoggerPatternConverter;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.core.pattern.LoggerPatternConverter;
 
+import org.slf4j.Logger; //important
+import org.slf4j.LoggerFactory;
 
+//import com.mysql.cj.log.LogFactory;
 
 public class JDBCDemo {
-	private static final Logger logger = LogManager.getLogger(JDBCDemo.class);
+	private static final Logger logger = LoggerFactory.getLogger(JDBCDemo.class);
 	public static void main(String[] args) {
 		String DB_URL = "jdbc:mysql://localhost/practice";
 		String DB_USER = "root";
